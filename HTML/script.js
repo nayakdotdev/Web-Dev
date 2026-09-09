@@ -1,0 +1,1 @@
+alert("Welcome to the Website") // gives alert everytime the website loads
