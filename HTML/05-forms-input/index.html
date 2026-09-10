@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Fill the Form</h1>
+    <form action="post">
+        <!-- action attribute handles where the data should be sent -->
+        <div>
+            <!-- div tag to make different sections -->
+            <label for="username">Username</label>
+            <!-- label for the specific input, connected using for and id -->
+            <input type="text" id="username" name="username" placeholder="Enter your Username" autofocus>
+            <!-- id is unique identifier, name is key value, autofocus directly puts cursor with page loads -->
+        </div>
+        <div>
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="confirm" id="confirm" value="yes">
+            <label for="confirm">Check to Confirm</label>
+        </div>
+        <div>
+            <label for="feedback">Share your Feedback</label>
+            <br>
+            <textarea name="feedback" id="feedback" rows="5" cols="20"></textarea>
+            <!-- are for text to be written, size managed using rows and cols -->
+        </div>
+        <div>
+            <select name="colours">
+                <!-- select tag creates a dropdown menu -->
+                <option value="red">RED</option>
+                <!-- option tag to make options for the select tag -->
+                <option value="green">GREEN</option>
+                <option value="yellow">YELLOW</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
