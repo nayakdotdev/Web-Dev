@@ -1,0 +1,11 @@
+.red{
+    /* .class_name to access class */
+    color: red;
+}
+.yellow{
+    background-color: yellow;
+}
+#FirstDiv{
+    /* #id_name to access id */
+    /* background-color: green; */
+}
