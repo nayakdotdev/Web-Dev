@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video, Audio and Media</title>
+</head>
+
+<body>
+    <div>
+        <video src="video.mp4" height="255" controls muted loop poster="image.jpg" preload="none"></video>
+    </div>
+    <div>
+        <audio src="audio.mp3" controls preload="metadata"></audio>
+        <!-- preload attribute helps to preload the whole media or only metadata or none -->
+    </div>
+    <div>
+        <svg height="100" width="100">
+            <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+        <!-- direct svg using svg tag -->
+        <img src="img.svg" alt="SVG Image">
+        <!-- svg using image tag -->
+    </div>
+    <div>
+        <iframe src="https://www.codewithharry.com/tutorial/working-with-svg" width="555" height="315"
+            frameborder="0"></iframe>
+        <!-- iframe to embed a website -->
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/XZwBNDGuWGU?si=SJCE33IaeRNF-NCf&amp;start=804"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- iframe to embed a youtube video -->
+    </div>
+</body>
+
+</html>
