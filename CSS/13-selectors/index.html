@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */ 
+        div{
+            background-color: red;
+        }
+        /* Class Selector */
+        .hi{
+            background-color: red;
+        }
+        /* ID Selector */
+        #hello{
+            color: rgb(165, 1, 241);
+            background-color: aqua;
+        }
+        /* Child Selector */
+        div > p{
+            background-color: green;
+        }
+        /* Descendant Selector */
+        div p{
+            background-color: yellow;
+            color: blue;
+        }
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selectors */
+        a:visited{
+            color: rgb(165, 62, 62);
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: black;
+        }
+        a:hover{
+            background-color: blue;
+        }
+        p:first-child{
+            background-color: rgb(30, 158, 115);
+        }
+    </style>
+</head>
+<body>
+    <div class="hi">
+        I am a div
+        <p>
+            I am para inside div
+            <article>
+                <p>
+                    I am para inside div then para then article
+                </p>
+            </article>
+        </p>
+        <p>
+            I am second para inside div
+        </p>
+    </div>
+    <div id="hello">I am also a div</div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.x.com">Go to Twitter</a>
+</body>
+</html>
