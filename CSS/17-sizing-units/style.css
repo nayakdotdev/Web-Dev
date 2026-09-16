@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 20px;
+}
+.box{
+    background-color: aqua;
+    border: 2px solid black;
+    width: 80vw;
+    height: 10vh;
+    font-size: 2rem;
+    margin: auto;
+    box-sizing: border-box;
+}
+.container{
+    background-color: aqua;
+    border: 2px solid black;
+    width: 80vw;
+    min-height: 80vh;
+    font-size: 15px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+.container>div{
+    font-size: 2em;
+    width: 50%;
+    border: 2px solid red;
+}
+.container>div>p{
+    width: 50%;
+    border: 2px solid blue;
+}
+.cont{
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin: 20px auto;
+    color: rgb(0, 0, 0);
+    width: 80vw;
+}
