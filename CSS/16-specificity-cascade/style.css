@@ -1,0 +1,20 @@
+/* specificity is 1 */
+h1{
+    color: aqua;
+}
+/* specificity is 10 */
+.cyellow{
+    color: yellow;
+}
+/* specificity is 10+1=11 */
+h1.cred{
+    color: red;
+}
+/* specificity is 10 */
+.cpurple{
+    color: purple;
+}
+/* specificity is 10 */
+[data-x=a]{
+    color: maroon;
+}
