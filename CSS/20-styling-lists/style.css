@@ -1,0 +1,7 @@
+nav>ul>li {
+    list-style-type: "🔥";
+    background-color: aqua;
+    list-style-position: inside;
+    border: 2px solid black;
+    /* list-style: url("https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNm1zeWZ0b3o4dGdpMnlreGtwdXBtNnQ5Y3pwN3NvMDJqMzl4Yjg0cyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/zCq3TyuABrRrG/giphy.gif"); */
+}
