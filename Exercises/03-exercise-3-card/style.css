@@ -4,9 +4,11 @@ body {
     background-color: grey;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+    display: flex;
 }
 
 .card {
+    margin: 5px;
     width: 450px;
     height: 615px;
     background-color: white;
@@ -54,11 +56,15 @@ h2 {
 }
 
 .button button {
-    background-color: rgba(0, 213, 255, 0.214);
+    background-color: rgba(0, 166, 255, 0.166);
     color: rgb(0, 119, 255);
     padding: 15px 30px;
     border-radius: 30px;
     border: 0;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+}
+
+.button button:hover{
+    background-color: rgba(74, 191, 255, 0.166);
 }
