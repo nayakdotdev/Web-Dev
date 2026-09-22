@@ -1,0 +1,33 @@
+/* .box:first-child{
+    background-color: red;
+}
+.box::first-line{
+    color: blue;
+}
+.boxes *{
+    border: 2px solid black;
+} */
+/* p, a, .box, [data-color="primary"]{
+    background-color: red;
+} */
+/* .box:nth-child(odd){
+    color: yellow;
+}
+.box:nth-last-child(2){
+    color: aqua;
+} */
+.boxes::before{
+    content: "hello guys this a before";
+    color: red;
+}
+.boxes::after{
+    content: "bye guys this is a after";
+    color: blue;
+}
+.box::first-letter{
+    color: peru;
+    font-size: 45px;
+}
+input::placeholder{
+    color: purple;
+}
