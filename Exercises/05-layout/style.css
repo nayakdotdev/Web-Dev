@@ -12,10 +12,14 @@
     margin: 0;
     padding: 0;
 }
-.nav{
+body{
+    background-color: black;
+}
+header{
     position: sticky;
-    z-index: 1;
     top: 0px;
+}
+nav{
     background-color: var(--navbar);
     padding: 15px 0px;
 }
@@ -31,30 +35,28 @@ ul li a{
 
 }
 .boxes{
-    display: flex;
-    margin: 40px 40px 10px 40px;
+    margin: 10px 40px;
     background-color: var(--container);
-    width: 95%;
-    height: 600px;
+    padding: 55px 23px;
+    text-align: center;
 }
 .box1{
-    position: relative;
-    top: 55px;
-    left: 100px;
-    width: 500px;
-    height: 500px;
+    width: 45%;
+    height: 70vh;
+    margin: 0px 12px;
+    display: inline-block;
     background-color: var(--box1);
 }
 .box2{
-    position: relative;
-    top: 55px;
-    left: 350px;
-    width: 500px;
-    height: 500px;
+    width: 45%;
+    height: 70vh;
+    margin: 0px 12px;
+    display: inline-block;
     background-color: var(--box2);
 }
 .content{
-    border: 2px solid black;
+    border: 2px solid var(--fonts);
+    color: var(--fonts);
     width: 80vw;
     margin: 0px 0px 90px 150px;
     text-align: center;
@@ -63,8 +65,7 @@ ul li a{
     font-family: "Poppins", sans-serif;
     font-size: 60px;
 }
-.footer{
-    width: 100%;
+footer{
     height: 90px;
     background-color: var(--foot);
 }
