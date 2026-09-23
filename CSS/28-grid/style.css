@@ -1,0 +1,26 @@
+.container{
+    border: 2px solid red;
+    display: grid;
+    width: 80vw;
+    height: 100vh;
+    /* grid-template-columns: [first] 120px [second] 100px [thd]; */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+    /* grid-template-rows: repeat(2, 40px); */
+    gap: 40px 10px;
+    justify-content: center;
+    align-content: center;
+}
+.item{
+    border: 2px solid black;
+    width: 55px;
+    height: 55px;
+}
+.item-1{
+    /* grid-column: 1/2;
+    grid-row: 1/2; */
+}
+.item-4{
+    /* grid-column: first/thd;
+    grid-row: 1/2; */
+}
