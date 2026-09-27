@@ -12,51 +12,21 @@
     bottom: 0px;
     left: 0px;
     border-radius: 50%;
-    animation: bounce 3s linear infinite;
+    animation: bounceX 3s linear infinite, bounceY 1s ease-out infinite alternate;
 }
-@keyframes bounce{
-    0%{
+@keyframes bounceY{
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: 100%;
+    }
+}
+@keyframes bounceX{
+    from{
         left: 0;
-        bottom: 0;
     }
-    10%{
-        left: 10%;
-        bottom: 60%;
-    }
-    20%{
-        left: 20%;
-        bottom: 0;
-    }
-    30%{
-        left: 30%;
-        bottom: 40%;
-    }
-    40%{
-        left: 40%;
-        bottom: 0;
-    }
-    50%{
-        left: 50%;
-        bottom: 20%;
-    }
-    60%{
-        left: 60%;
-        bottom: 0;
-    }
-    70%{
-        left: 70%;
-        bottom: 10%;
-    }
-    80%{
-        left: 80%;
-        bottom: 0;
-    }
-    90%{
-        left: 90%;
-        bottom: 5%;
-    }
-    100%{
-        left: calc(100%-100px);
-        bottom: 0%;
+    to{
+        left: 100%;
     }
 }
