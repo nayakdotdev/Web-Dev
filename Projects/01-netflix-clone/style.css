@@ -4,6 +4,7 @@
 }
 body{
     background-color: black;
+    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
 }
 .main{
     height: 95vh;
@@ -65,7 +66,6 @@ nav button{
     font-weight: bold;
 }
 .tagline{
-    font-family: "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,15 +128,14 @@ nav button{
     background-color: rgb(209, 0, 0);
     cursor: pointer;
 }
-.trending {
+.main2 {
     position: relative;
     background: #000;
     color: #fff;
-    padding: 90px 10% 50px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    padding: 60px 10% 50px;
     overflow-x: clip;
 }
-.trending::before {
+.main2::before {
     content: "";
     position: absolute;
     top: -45px;
@@ -147,7 +146,7 @@ nav button{
     background: linear-gradient(to right, #b3195f 0%, #e50914 50%, #b3195f 100%);
     z-index: 0;
 }
-.trending::after {
+.main2::after {
     content: "";
     position: absolute;
     top: -42px;
@@ -159,12 +158,88 @@ nav button{
                 #141a52 0%, #080b26 50%, #000 100%);
     z-index: 0;
 }
-.trending h2,.trending .cards {
-    position: relative;
-    z-index: 1;
+.trending{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 4rem;
 }
-.trending h2 {
-    margin: 0 0 20px;
-    font-size: 1.6rem;
+.trending ul{
+    display: flex;
+    justify-content: space-around;
+}
+.trending ul li{
+    list-style: none;
+    position: relative;
+    display: block;
+}
+.trending ul li img{
+    border-radius: 10px;
+    display: block;
+}
+.trending ul li span{
+    position: absolute;
+    left: -20px;
+    bottom: -10px;
     font-weight: 700;
+    font-size: 100px;
+    color: black;
+    -webkit-text-stroke: 3px white;
+    paint-order: stroke fill;
+}
+.trending ul li:hover{
+    transform: scale(105%);
+    cursor: pointer;
+}
+.reasons{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
+    margin-bottom: 4rem;
+}
+.card{
+    position: relative;
+    flex: 1;
+    min-height: 230px;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(149deg, rgb(25, 32, 80) 0%, rgb(35, 12, 30) 100%);
+}
+.card h4{
+    font-size: 23px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+.card p{
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #b3b3b3;
+}
+.card img{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 55px;
+    filter: invert(1);
+}
+.faq{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.faq button{
+    padding: 27px 25px;
+    border: none;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+}
+.faq button:hover{
+    background-color: rgb(60, 60, 60);
 }
