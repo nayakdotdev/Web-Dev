@@ -1,23 +1,17 @@
-let a=Number(prompt("Enter a Number"))
-let b=Number(prompt("Enter a Number"))
-let op=prompt("Enter Operator")
-if(Math.random()<0.1){
-    if(op=="+")
-        console.log(a-b)
-    else if(op=="*")
-        console.log(a+b)
-    else if(op=="-")
-        console.log(a/b)
-    else if(op=="/")
-        console.log(a**b)
+let rnd=Math.random();
+console.log(rnd);
+let x=prompt("Enter First Number");
+let op=prompt("Enter Operator");
+let y=prompt("Enter Second Number");
+const ob={
+    "+":"-",
+    "*":"+",
+    "-":"/",
+    "/":"**",
 }
+if(rnd>0.1)
+    alert(`Answer is ${eval(`${x} ${op} ${y}`)}`);
 else{
-    if(op=="+")
-        console.log(a+b)
-    else if(op=="*")
-        console.log(a*b)
-    else if(op=="-")
-        console.log(a-b)
-    else if(op=="/")
-        console.log(a/b)
+    op=ob[op];
+    alert(`Answer is ${eval(`${x} ${op} ${y}`)}`);
 }
