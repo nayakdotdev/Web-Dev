@@ -1,13 +1,10 @@
-const color={
-    1:"red",
-    2:"green",
-    3:"yellow",
-    4:"blue",
-    5:"purple"
+function getRandomColors(){
+    let v1=Math.ceil(Math.random()*255)
+    let v2=Math.ceil(Math.random()*255)
+    let v3=Math.ceil(Math.random()*255)
+    return `rgb(${v1},${v2},${v3})`
 }
-let r1=Math.floor(Math.random()*5)+1;
-let r2=Math.floor(Math.random()*5)+1;
 document.querySelectorAll(".box").forEach(e=>{
-    e.style.backgroundColor=color[r1]
-    e.style.color=color[r2]
+    e.style.backgroundColor=getRandomColors()
+    e.style.color=getRandomColors()
 })
