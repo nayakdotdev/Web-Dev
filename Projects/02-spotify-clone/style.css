@@ -1,0 +1,117 @@
+*{
+    font-family: SpotifyMixUITitle, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.left{
+    width: 25vw;
+}
+.right{
+    width: 75vw;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 7px;
+}
+.home ul li{
+    display: flex;
+    width: 25px;
+    gap: 15px;
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+    font-size: 15px;
+    align-items: center;
+}
+.heading{
+    gap: 15px;
+    font-weight: bold;
+    font-size: 10px;
+    align-items: center;
+}
+.heading img{
+    width: 30px;
+}
+.footer{
+    font-size: 10px;
+    gap: 9px;
+    position: absolute;
+    bottom: 10px;
+}
+.footer a{
+    color: grey;
+    text-decoration: none;
+}
+.footer a:hover{
+    color: white;
+}
+.library{
+    min-height: 77.3vh;
+    position: relative;
+}
+.header{
+    justify-content: space-between;
+    background-color: #292929aa;
+    align-items: center;
+    height: 80px;
+}
+.header>*{
+    padding: 15px;
+}
+.buttons{
+    gap: 25px;
+}
+button{
+    border: none;
+    font-weight: bold;
+}
+.loginbtn{
+    border-radius: 50px;
+    padding: 12px 25px;
+}
+.loginbtn:hover{
+    font-size: 14px;
+    background-color: rgb(220, 220, 220);
+}
+.signupbtn{
+    background: none;
+    color: rgb(159, 159, 159);
+}
+.signupbtn:hover{
+    color: white;
+    font-size: 14px;
+}
+.spotifyPlaylists{
+    padding: 16px;
+}
+.cardContainer{
+    margin: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+.card{
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #292929aa;
+    position: relative;
+}
+.card>*{
+    padding-top: 10px;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.play{
+    position: absolute;
+    top: 142px;
+    right: 15px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
