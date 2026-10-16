@@ -12,9 +12,10 @@
 <body>
     <div class="container flex bg-black">
         <div class="left">
+            <img width="35" class="close invert" src="assets/close.svg" alt="">
             <div class="home bg-grey m-1 rounded p-1">
                 <div class="logo">
-                    <img class="invert" src="assets/logo.svg" alt="logo">
+                    <img width="125" class="invert" src="assets/logo.svg" alt="logo">
                 </div>
                 <ul>
                     <li><img class="invert" src="assets/home.svg" alt="home">Home</li>
@@ -27,19 +28,7 @@
                     <h2>Your Library</h2>
                 </div>
                 <div class="songList">
-                    <ul>
-                        <li>
-                            <img class="invert" src="assets/music.svg" alt="">
-                            <div class="info flex">
-                                <div>Song Name</div>
-                                <div>Song Artist</div>
-                            </div>
-                            <div class="playnow flex">
-                                <span>Play Now</span>
-                                <img class="invert" src="assets/play.svg" alt="playnow">
-                            </div>
-                        </li>
-                    </ul>
+                    <ul></ul>
                 </div>
                 <div class="footer flex">
                     <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
@@ -55,6 +44,7 @@
         <div class="right bg-grey rounded">
             <div class="header flex rounded">
                 <div class="nav">
+                    <img width="25" class="hamburger invert" src="assets/hamburger.svg" alt="">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
@@ -73,42 +63,23 @@
             </div>
             <div class="spotifyPlaylists">
                 <h1>Spotify Playlists</h1>
-                <div class="cardContainer flex">
-                    <div class="card">
-                        <div class="play">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-                                <circle cx="32" cy="32" r="30" fill="#1ed760" />
-                                <path d="M25 17.5 L47 32 L25 46.5 Z" fill="#000000" />
-                            </svg>
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e026e9e64025043feb3999aa13b" alt="">
-                        <h2>Happy Hits!</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
+                <div class="cardContainer flex"></div>
+            </div>
+            <div class="playbar rounded invert">
+                <input id="seekRange" class="seekbar" type="range" min="0" max="100" step="0.1" value="0">
+                <div class="abovebar flex">
+                    <div class="songinfo"></div>
+                    <div class="songbuttons flex">
+                        <img id="previous" src="assets/prevsong.svg" alt="prev">
+                        <img id="play" src="assets/play.svg" alt="play">
+                        <img id="next" src="assets/nextsong.svg" alt="next">
                     </div>
-                    <div class="card">
-                        <div class="play">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-                                <circle cx="32" cy="32" r="30" fill="#1ed760" />
-                                <path d="M25 17.5 L47 32 L25 46.5 Z" fill="#000000" />
-                            </svg>
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e026e9e64025043feb3999aa13b" alt="">
-                        <h2>Happy Hits!</h2>
-                        <p>Hits to boost your mood and fill you with happiness!</p>
-                    </div>
-                </div>
-                <div class="playbar rounded invert">
-                    <div class="seekbar">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="abovebar flex">
-                        <div class="songinfo"></div>
-                        <div class="songbuttons flex">
-                            <img id="previous" src="assets/prevsong.svg" alt="prev">
-                            <img id="play" src="assets/play.svg" alt="play">
-                            <img id="next" src="assets/nextsong.svg" alt="next">
-                        </div>
+                    <div class="rightside flex">
                         <div class="songtime"></div>
+                        <div class="volume flex">
+                            <img id="volIcon" src="assets/volume.svg" alt="volume">
+                            <input id="volRange" type="range" min="0" max="100" value="50">
+                        </div>
                     </div>
                 </div>
             </div>
